@@ -1,0 +1,125 @@
+/* Toggle button styling */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  .dark-mode-toggle input[type="checkbox"] {
+    display: none;
+  }
+  
+  .dark-mode-toggle label {
+    display: block;
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .dark-mode-toggle label:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .dark-mode-toggle input[type="checkbox"]:checked + label {
+    background-color: #333;
+  }
+  
+  .dark-mode-toggle input[type="checkbox"]:checked + label:after {
+    transform: translateX(25px);
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
+
+
+/* ----scrolbar--- */
+
+.dropbtn {
+ 
+
+  padding: 3px;
+  font-size: 2px;
+  border-radius: 1px;
+  border:10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  height: 1000px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  background-image: url();
+  background-size: cover;
+  /* background-image: linear-gradient(140deg, rgb(225, 0, 255), rgb(191, 0, 255), rgb(140, 39, 255)); */
+  
+ }
+ 
+ * {
+  background-image: linear-gradient(45deg rgb(255, 136, 0),rgb(180, 124, 46) red);
+ } 
+
+img {
+width: 300px;
+height: 180px;
+border-radius: 10px;
+}
+.RASM {
+   text-align: center;
+   text-shadow: 3px 3px 1px rgb(255, 183, 0);
+}
